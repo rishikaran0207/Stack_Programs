@@ -26,5 +26,13 @@ public class Operation {
         System.out.println("\nAfter Pop:");
         stacklist.display();
     }
+    public static void queueelement() {
+        StackQueue stacklist =new StackQueue();
+        stacklist.queue(56);
+        stacklist.queue(30);
+        stacklist.queue(70);
+        stacklist.display();
+        stacklist.peek();
+    }
 }
 
