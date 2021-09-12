@@ -20,7 +20,20 @@ public class StackQueue {
         return newnode;
     }
 
+    public int peek(){
+        System.out.println("\nTop element is "+this.top.data);
+        return top.data;
+    }
 
+    public void poptillend() {
+        Node temp =top;
+        while (temp != null){
+            Node tempNode = this.head;
+            this.head = tempNode.next;
+            temp=temp.next;
+        }
+
+    }
 
 
     public void display(){
