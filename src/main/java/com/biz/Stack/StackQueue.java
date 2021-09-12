@@ -32,8 +32,8 @@ public class StackQueue {
             this.head = tempNode.next;
             temp=temp.next;
         }
-
     }
+
     public void queue(int data) {
         Node newnode=new Node(data);
         if (head == null) {
@@ -49,7 +49,7 @@ public class StackQueue {
 
     public void display(){
         if (head == null) {
-            System.out.println("Linked list is Empty");
+            System.out.println("\nStack list is Empty");
             return;
         } else {
             System.out.print("\n The stack elements are ");
